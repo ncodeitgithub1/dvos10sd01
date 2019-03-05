@@ -7,7 +7,7 @@
   vars_files:
   - files/awscredskey.yml
   tasks:
-  - name: Basic provisiong of t2.micro
+  - name: Managing state of an instance
     ec2:
       aws_access_key: "{{ aws_id }}"
       aws_secret_key: "{{ aws_key }}"
